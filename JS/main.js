@@ -7,9 +7,20 @@ toggle.onclick = function (){
 
      
 }
+let upToTop = document.querySelector(".top .fa-arrow-up");
 
-// let list = document.querySelectorAll("header ul li");
+window.onscroll = ()=>{
+     if (this.scrollY > 500) {
+          upToTop.classList.add("show"); 
+     }
+     else{
+          upToTop.classList.remove("show"); 
 
-// list.onmouseenter = function () {
-//      list.classList.toggle("active");
-// }
+     }
+}
+upToTop.onclick = ()=>{
+     window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+     })
+}

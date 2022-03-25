@@ -66,6 +66,24 @@ ul {
      }
 }
 
+.top i{
+     color: #fff;
+     position: fixed;
+     right: -40px;
+     bottom: 30px;
+     background-color: #5c6bc0;
+     font-size: 18px;
+     padding: 10px 10px;
+     border-radius: 50%;
+     cursor: pointer;
+     transition: 0.5s;
+     z-index: 1000;
+}
+.top i.show{
+     right: 30px;
+     
+}
+
 /* Start Header */
 header {
      position: absolute;
